@@ -431,7 +431,7 @@ $(document).ready(function(e) {
 
 
 $(".modalLink").click(function(e){
-	$("#genericModalTitle").text($("#title-"+(this.data("modal").data("id")).html());
+	$("#genericModalTitle").text($("#title-"+(this.data("modal").data("id"))).html());
 	$("#genericModalText").text($("#desc-"+(this.data("modal").data("id"))).html());
 	$("#genericModal").modal('toggle');
 });
