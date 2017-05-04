@@ -384,7 +384,7 @@ function fillWorks(data, genType,id){
 			</div>
 			<div class="hover vertical-align">
 				<div class="inHover">
-					<a class="link vertical-align" id="modalLink`+id+`">
+					<a class="link vertical-align modalLink" data-modal-id="`+id+`">
 						<i class="fa fa-arrows-alt fa-1x arrow"></i>
 					</a>`;
 		if(data.link!="none"){
@@ -399,13 +399,7 @@ function fillWorks(data, genType,id){
 				<div></div>
 			</div>
 		</div>`;
-	$( "#mixItUp" ).append( bloc );
-	$("modalLink"+id).click(function(e){
-		$("#genericModalTitle").text($("#title-"+id).html());
-	 	$("#genericModalText").text($("#desc-"+id).html());
-	 	$("#genericModal").modal('toggle');
-});
-
+	$("#mixItUp").append(bloc);
 }
 /************************
 * = ScrollReveal setup  *
@@ -433,4 +427,11 @@ $(document).ready(function(e) {
 	    });
 	} // In case i forget, pace monitors the global loading of the page !
 	Pace.once(Pace.done, triggerReveals());
+});
+
+
+$(".modalLink").click(function(e){
+	$("#genericModalTitle").text($("#title-"+(this.data("modal").data("id")).html());
+	$("#genericModalText").text($("#desc-"+(this.data("modal").data("id"))).html());
+	$("#genericModal").modal('toggle');
 });
