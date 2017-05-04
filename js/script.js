@@ -385,7 +385,7 @@ function fillWorks(data, genType,id){
 			<div class="hover vertical-align">
 				<div class="inHover">
 					<a class="link vertical-align modalLink" data-modal-id="`+id+`">
-						<i class="fa fa-arrows-alt fa-1x arrow"></i>
+						<i class="fa fa-bars arrow"></i>
 					</a>`;
 		if(data.link!="none"){
 			bloc+=`<a class="link vertical-align" href="`+data.link+`" target="_blank">
@@ -431,7 +431,7 @@ $(document).ready(function(e) {
 
 
 $(".modalLink").click(function(e){
-	$("#genericModalTitle").text($("#title-"+(this.data("modal").data("id"))).html());
-	$("#genericModalText").text($("#desc-"+(this.data("modal").data("id"))).html());
-	$("#genericModal").modal('toggle');
+		$("#genericModalTitle").text($("#title-"+($(this).data("modalId"))).html());
+		$("#genericModalText").text($("#desc-"+($(this).data("modalId"))).html());
+		$("#genericModal").modal('toggle');
 });
