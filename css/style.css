@@ -224,7 +224,6 @@ body {
 
 #slide-1 {
 	color: #ffffff;
-	min-height: 643px;
 }
 
 #slide-1 h1 {
@@ -287,19 +286,9 @@ body {
 #slide-2 {
 	background-color: #B51818;
 	color: #e4e6e5;
-	margin-top: 2.5em;
+	margin-top: 0;
 	z-index: 5;
 }
-	@media (min-width: 768px) {
-		#slide-2 {
-			margin-top: 1em;
-		}
-	}
-	@media (min-width: 992px) {
-		#slide-2 {
-			margin-top: 3em;
-		}
-	}
 
 	.title-row {
 		font-size: 45px;
@@ -622,18 +611,6 @@ body {
  *
  * Adapted by LeaveToDream for personnal promotion purpose.
  */
-.large-header {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
-	z-index: 1;
-}
-
-.demo-1 .large-header{
-	/*background-image: url('../images/demo-1-bg-gradient.jpg');*/
-}
 
 .front {
 	margin-top: -700px;

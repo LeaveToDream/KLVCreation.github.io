@@ -34,7 +34,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-			</div>	
+			</div>
 			<div id="navbar" class="navbar-collapse collapse navbar-responsive-collapse">
 				<ul class="nav row TheMenu">
 					<li data-slide="1" class="col-xs-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="fa fa-home"></span> <span class="text">HOME</span></a></li>
@@ -60,6 +60,25 @@
 		<div id="arrow-right" class="disabled visible-lg"></div>
 	</div><!-- /.arrows -->
 
+	<!-- Generic Modal -->
+	<div id="genericModal" class="modal fade" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="genericModalTitle"></h4>
+	      </div>
+	      <div class="modal-body">
+	        <p id="genericModalText"></p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<!-- /modal -->
 
 	<!-- === MAIN Background === -->
 	<div class="slide story demo-1" id="slide-1" data-slide="1">
@@ -111,18 +130,15 @@
 					<br/>
 					<div class="leftReveal">Languages &amp; framerworks I'm learning :</div> <br/>
 					<hr/>
-					<div class="rightReveal">HTML : <div class="progress progress-striped"><div class="progress-bar progress-bar-success" role="progressbar" style="width:100%"></div></div></div>
-					<div class="leftReveal">CSS : <div class="progress progress-striped active"><div class="progress-bar progress-bar-success" role="progressbar" style="width:90%"></div></div></div>
+					<div class="rightReveal">HTML : <div class="progress progress-striped active"><div class="progress-bar progress-bar-success" role="progressbar" style="width:95%"></div></div></div>
+					<div class="leftReveal">CSS (Bootstrap) : <div class="progress progress-striped active"><div class="progress-bar progress-bar-success" role="progressbar" style="width:90%"></div></div></div>
 					<div class="rightReveal">PHP : <div class="progress progress-striped active"><div class="progress-bar progress-bar-success" role="progressbar" style="width:80%"></div></div></div>
 					<div class="leftReveal">SQL (MySQL) : <div class="progress progress-striped active"><div class="progress-bar progress-bar-info" role="progressbar" style="width:70%"></div></div></div>
-					<div class="rightReveal">Bootstrap : <div class="progress progress-striped active"><div class="progress-bar progress-bar-info" role="progressbar" style="width:70%"></div></div></div>
-					<div class="leftReveal">Javascript : <div class="progress progress-striped active"><div class="progress-bar progress-bar-info" role="progressbar" style="width:60%"></div></div></div>
-					<div class="rightReveal">jQuery : <div class="progress progress-striped active"><div class="progress-bar progress-bar-info" role="progressbar" style="width:60%"></div></div></div>
-					<div class="leftReveal">Python : <div class="progress progress-striped active"><div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%"></div></div></div>
-					<div class="rightReveal">Java : <div class="progress progress-striped active"><div class="progress-bar progress-bar-warning" role="progressbar" style="width:30%"></div></div></div>
-					<div class="leftReveal">VB.net : <div class="progress progress-striped active"><div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%"></div></div></div>
+					<div class="rightReveal">Javascript (jQuery) : <div class="progress progress-striped active"><div class="progress-bar progress-bar-info" role="progressbar" style="width:60%"></div></div></div>
+					<div class="leftReveal">Java : <div class="progress progress-striped active"><div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%"></div></div></div>
+					<div class="rightReveal">Python : <div class="progress progress-striped active"><div class="progress-bar progress-bar-warning" role="progressbar" style="width:30%"></div></div></div>
+					<div class="leftReveal">C : <div class="progress progress-striped active"><div class="progress-bar progress-bar-danger" role="progressbar" style="width:25%"></div></div></div>
 					<div class="rightReveal">oCaml : <div class="progress progress-striped active"><div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%"></div></div></div>
-					<div class="leftReveal">C++ : <div class="progress progress-striped active"><div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%"></div></div></div>
 				</div><!-- /col12 -->
 				<div class="col-sm-1 hidden-sm">&nbsp;</div>
 			</div><!-- /row -->
@@ -197,7 +213,7 @@
 				<div id="mixItUpMenu" class="menu col-xs-12">
 					<button class="filter btn btn-default" data-filter="all">Show All</button>
 					<button class="filter btn btn-default" data-filter=".web">Web</button>
-					Designs : 
+					Designs :
 					<button class="filter btn btn-default" data-filter=".static">Static</button>
 					<button class="filter btn btn-default" data-filter=".onepage">OnePage</button>
 					<button class="filter btn btn-default" data-filter=".classic">Classic</button>

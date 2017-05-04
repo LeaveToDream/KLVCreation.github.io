@@ -358,7 +358,7 @@ jQuery(document).ready(function ($) {
 ******************/
 $(document).ready(function(e) {
 	$.ajax({
-	  url: 'data.json',
+	  url: './data.json',
 	  dataType: 'json',
 	  success: function (response) {
 	  	var i = 1;
@@ -382,13 +382,15 @@ function fillWorks(data, genType,id){
 			</div>
 			<div class="hover vertical-align">
 				<div class="inHover">
-					<!--<a class="link vertical-align modalProject(`+id+`)">
+					<a class="link vertical-align" id="modalLink`+id+`">
 						<i class="fa fa-arrows-alt fa-1x arrow"></i>
-					</a>-->
-					<a class="link vertical-align" href="`+data.link+`" target="_blank">
-						<i class="fa fa-angle-right fa-1x angle"></i>
-					</a>
-					<span class="name">`+data.name+`</span>
+					</a>`;
+		if(data.link!="none"){
+			bloc+=`<a class="link vertical-align" href="`+data.link+`" target="_blank">
+				<i class="fa fa-angle-right fa-1x angle"></i>
+			</a>`
+		}
+		bloc+=`<span class="name">`+data.name+`</span>
 				</div>
 			</div>
 			<div class="cadre">
@@ -396,6 +398,10 @@ function fillWorks(data, genType,id){
 			</div>
 		</div>`;
 	$( "#mixItUp" ).append( bloc );
+	$("modalLink"+id).click(function(e){
+		displayMixitUpModal(data.name, data.desc);
+	});
+
 }
 /************************
 * = ScrollReveal setup  *
@@ -423,4 +429,15 @@ $(document).ready(function(e) {
 	    });
 	} // In case i forget, pace monitors the global loading of the page !
 	Pace.once(Pace.done, triggerReveals());
+});
+
+/************************
+* = Generic modal setup *
+************************/
+$(document).ready(function(e){
+	function displayMixitUpModal(title, desc){
+		 $("#genericModalTitle").text(title);
+		 $("#genericModalText").text(desc);
+		 $("genericModal").modal('toggle');
+	}
 });

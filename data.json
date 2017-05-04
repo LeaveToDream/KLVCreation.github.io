@@ -1,59 +1,59 @@
 {
 	"web":[{
-		   "name":"JardinDeTara", 
+		   "name":"JardinDeTara",
 		   "type":"Static",
 		   "state":"Complete",
-		   "link":"http://www.jardindetara.fr",
-		   "desc":"Description coming soon ..."
-	   }, 
+		   "link":"none",
+		   "desc":"Web site for the company Jardin De Tara, a privater landscape gardener near Aix en Provence. This is no longuer the one used for commercial front end, but the project was nevertheless pretty interesting."
+	   },
 	   {
-		   "name":"KLVCreation", 
+		   "name":"KLVCreation",
 		   "type":"OnePage",
 		   "state":"Developing",
 		   "link":"http://KLVCreation.github.io",
-		   "desc":"Description coming soon ..."
-	   }, 
+		   "desc":"The web page you're visiting :)"
+	   },
 	   {
-		   "name":"Resto", 
+		   "name":"Resto",
 		   "type":"OnePage",
 		   "state":"Dropped, Complete",
-		   "link":"http://klvhouse.org/sandbox/Resto/",
-		   "desc":"Description coming soon ..."
-	   }, 
+		   "link":"none",
+		   "desc":"A web site for a Restorer in Aix en Provence, \"Les Agapges chez Gilou\". Never got paid for this, but the project was almost finished."
+	   },
 	   {
-		   "name":"Coach", 
+		   "name":"Coach",
 		   "type":"OnePage",
 		   "state":"Dropped, Unfinished",
-		   "link":"http://klvhouse.org/sandbox/coach/",
-		   "desc":"Description coming soon ..."
-	   }, 
+		   "link":"none",
+		   "desc":"A web site for an Energy-Therapist in Aix en Provence. Order got cancelled two weeks before delivery."
+	   },
 	   {
-		   "name":"Epic Heroes TCG", 
+		   "name":"Epic Heroes TCG",
 		   "type":"OnePage",
 		   "state":"Developing",
-		   "link":"javascript:return false;",
-		   "desc":"Description coming soon ..."
-	   }, 
+		   "link":"none",
+		   "desc":"Personal projet, the aim was to create rules for a card game, based on a mobile app based on a web serie based on World Of Warcraft !"
+	   },
 	   {
-		   "name":"Equi-m", 
+		   "name":"Equi-m",
 		   "type":"Classic",
 		   "state":"Complete",
 		   "link":"http://www.equim.fr",
-		   "desc":"Description coming soon ..."
-	   }, 
+		   "desc":"A web site for Equi-m, an equi-therapist near Aix en Provence."
+	   },
 	   {
-		   "name":"ToitsDeProvence", 
+		   "name":"ToitsDeProvence",
 		   "type":"Classic",
 		   "state":"Developing",
-		   "link":"javascript:return false;",
-		   "desc":"Description coming soon ..."
-	   }, 
+		   "link":"none",
+		   "desc":"A web site under construction, when i have some free time, for a slater near Aix en Provence : \"Toits de Provence\" "
+	   },
 	   {
-		   "name":"Imapix Anim", 
+		   "name":"Imapix Anim",
 		   "type":"Classic",
 		   "state":"Dropped, Unfinished",
-		   "link":"javascript:return false;",
-		   "desc":"Description coming soon ..."
+		   "link":"none",
+		   "desc":"A web site for a studio that creates audio-visual work, never got paid once the model was made, so only have a model done."
 	   }
 	]
 }
