@@ -10,17 +10,18 @@
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
+        $("#slide-1").css("min-height", height);
         target = {x: width/2, y: height/2};
 
-        height_perso = "643";
 
         largeHeader = document.getElementById('large-header');
-        largeHeader.style.height = height_perso+'px';
+        largeHeader.style.height = height+'px';
 
         canvas = document.getElementById('demo-canvas');
         canvas.width = width;
-        canvas.height = height_perso;
+        canvas.height = height;
         ctx = canvas.getContext('2d');
+
 
         // create points
         points = [];
