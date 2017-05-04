@@ -367,7 +367,12 @@ $(document).ready(function(e) {
 	    	i+=1;
 	    });
 	    // Instantiate MixItUp:
-		$('#mixItUp').mixItUp();
+			$('#mixItUp').mixItUp();
+			$(".modalLink").click(function(e){
+					$("#genericModalTitle").text($("#title-"+($(this).data("modalId"))).html());
+					$("#genericModalText").text($("#desc-"+($(this).data("modalId"))).html());
+					$("#genericModal").modal('toggle');
+			});
 	  }
 	});
 });
@@ -427,11 +432,4 @@ $(document).ready(function(e) {
 	    });
 	} // In case i forget, pace monitors the global loading of the page !
 	Pace.once(Pace.done, triggerReveals());
-});
-
-
-$(".modalLink").click(function(e){
-		$("#genericModalTitle").text($("#title-"+($(this).data("modalId"))).html());
-		$("#genericModalText").text($("#desc-"+($(this).data("modalId"))).html());
-		$("#genericModal").modal('toggle');
 });
