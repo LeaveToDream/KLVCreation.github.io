@@ -667,3 +667,21 @@ body {
 .bottomReveal, .leftReveal, .rightReveal, .topReveal, .scaleReveal, .title-row {
 	visibility: hidden;
 }
+
+/* ***** Generic Modal *****  */
+#genericModalTitle, #genericModalLabel {
+	font-family: -webkit-body initial ;
+}
+
+#genericModalTitle {
+	font-size: 2.6em;
+}
+#genericModalLabel {
+	font-size: 1.4em;
+}
+#genericModalText {
+	font-family: initial ;
+	font-size: 2.2em;
+	font-style: italic;
+	text-align: right ;
+}
