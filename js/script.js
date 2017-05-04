@@ -399,8 +399,10 @@ function fillWorks(data, genType,id){
 		</div>`;
 	$( "#mixItUp" ).append( bloc );
 	$("modalLink"+id).click(function(e){
-		displayMixitUpModal(data.name, data.desc);
-	});
+		$("#genericModalTitle").text(data.name);
+	 	$("#genericModalText").text(data.desc);
+	 	$("#genericModal").modal('toggle');
+});
 
 }
 /************************
@@ -429,15 +431,4 @@ $(document).ready(function(e) {
 	    });
 	} // In case i forget, pace monitors the global loading of the page !
 	Pace.once(Pace.done, triggerReveals());
-});
-
-/************************
-* = Generic modal setup *
-************************/
-$(document).ready(function(e){
-	function displayMixitUpModal(title, desc){
-		 $("#genericModalTitle").text(title);
-		 $("#genericModalText").text(desc);
-		 $("genericModal").modal('toggle');
-	}
 });
