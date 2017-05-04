@@ -373,6 +373,8 @@ $(document).ready(function(e) {
 });
 function fillWorks(data, genType,id){
 	var bloc=`
+		<div style="display:none;" id="title-`+id+`">`+data.name+`</div>
+		<div style="display:none;" id="desc-`+id+`">`+data.desc+`</div>
 		<div class="item mix `+data.type.toLowerCase()+` `+genType.toLowerCase()+`" data-myorder="`+id+`">
 			<div class="img">
 				<img src="images\\projects\\`+id+`.jpg">
@@ -399,8 +401,8 @@ function fillWorks(data, genType,id){
 		</div>`;
 	$( "#mixItUp" ).append( bloc );
 	$("modalLink"+id).click(function(e){
-		$("#genericModalTitle").text(data.name);
-	 	$("#genericModalText").text(data.desc);
+		$("#genericModalTitle").text($("#title-"+id).html());
+	 	$("#genericModalText").text($("#desc-"+id).html());
 	 	$("#genericModal").modal('toggle');
 });
 
